@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BmiApp", "BmiApp\BmiApp.csproj", "{C2E980B6-5B8D-4368-A32D-D30C6484DDC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{1CA39073-0745-4089-B424-28D90D25437E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2E980B6-5B8D-4368-A32D-D30C6484DDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E980B6-5B8D-4368-A32D-D30C6484DDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E980B6-5B8D-4368-A32D-D30C6484DDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E980B6-5B8D-4368-A32D-D30C6484DDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CA39073-0745-4089-B424-28D90D25437E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA39073-0745-4089-B424-28D90D25437E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA39073-0745-4089-B424-28D90D25437E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA39073-0745-4089-B424-28D90D25437E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE49390A-73E2-4C7C-9B5E-B0ACB1248191}
+	EndGlobalSection
+EndGlobal
