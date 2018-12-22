@@ -24,7 +24,7 @@
             {
                 secondNumber = random.Next(MaxNumber);
             } while (firstNumber != secondNumber);
-            
+
             return $"{firstNumber} {randOperator} {secondNumber} = ?";
         }
 
@@ -35,7 +35,7 @@
 
         public int GetResult()
         {
-            switch(randOperator)
+            switch (randOperator)
             {
                 case "+":
                     return firstNumber + secondNumber;
@@ -54,16 +54,50 @@
         {
             string[] operators = { "+", "-", "x", "/" };
 
-            // ToDo: use algorithm to remove operator here
+            if (!hasAddition)
+            {
+                RemoveStringInArray(operators, "+");
+            }
+            if (!hasSubtraction)
+            {
+                RemoveStringInArray(operators, "-");
+            }
+            if (!hasMultiplication)
+            {
+                RemoveStringInArray(operators, "x");
+            }
+            if (!hasDivision)
+            {
+                RemoveStringInArray(operators, "/");
+            }
 
             if (operators.Length == 0)
             {
                 return string.Empty;
             }
-            
+
             int randOperator = random.Next(operators.Length);
 
             return operators[randOperator];
+        }
+
+        private string[] RemoveStringInArray(string[] strArray, string strToRemove)
+        {
+            int searchIndex = Array.FindIndex<string>(strArray, s => s == strToRemove);
+
+            if (searchIndex == strArray.Length - 1)
+            {
+                Array.Resize<string>(ref strArray, strArray.Length - 1);
+                return strArray;
+            }
+
+            for (int i = searchIndex; i < strArray.Length - 1; i++)
+            {
+                strArray[i] = strArray[i + 1];
+            }
+
+            Array.Resize<string>(ref strArray, strArray.Length - 1);
+            return strArray;
         }
     }
 }
