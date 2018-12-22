@@ -4,7 +4,14 @@
 
     public class FunnyMathService
     {
+        public const int Addition = 1;
+        public const int Subtraction = 2;
+        public const int Multiplication = 3;
+        public const int Division = 4;
+
         private const int MaxNumber = 1000;
+
+        private static string[] operatorNames = { "", "Addition", "Subtraction", "Multiplication", "Division" };
 
         private Random random;
         private int firstNumber;
@@ -23,7 +30,7 @@
             do
             {
                 secondNumber = random.Next(MaxNumber);
-            } while (firstNumber != secondNumber);
+            } while (firstNumber == secondNumber);
 
             return $"{firstNumber} {randOperator} {secondNumber} = ?";
         }
@@ -50,25 +57,30 @@
             return 0;
         }
 
+        public static string GetOperatorName(int op)
+        {
+            return operatorNames[op];
+        }
+
         private string GetRandomOperator(bool hasAddition, bool hasSubtraction, bool hasMultiplication, bool hasDivision)
         {
             string[] operators = { "+", "-", "x", "/" };
 
             if (!hasAddition)
             {
-                RemoveStringInArray(operators, "+");
+                RemoveStringInArray(ref operators, "+");
             }
             if (!hasSubtraction)
             {
-                RemoveStringInArray(operators, "-");
+                RemoveStringInArray(ref operators, "-");
             }
             if (!hasMultiplication)
             {
-                RemoveStringInArray(operators, "x");
+                RemoveStringInArray(ref operators, "x");
             }
             if (!hasDivision)
             {
-                RemoveStringInArray(operators, "/");
+                RemoveStringInArray(ref operators, "/");
             }
 
             if (operators.Length == 0)
@@ -81,7 +93,7 @@
             return operators[randOperator];
         }
 
-        private string[] RemoveStringInArray(string[] strArray, string strToRemove)
+        private string[] RemoveStringInArray(ref string[] strArray, string strToRemove)
         {
             int searchIndex = Array.FindIndex<string>(strArray, s => s == strToRemove);
 
