@@ -34,6 +34,10 @@ namespace GuessNumber
             numberToGuess = random.Next(min, max);
 
             btnStartGame.Text = "Restart";
+            txtUserGuess.Enabled = true;
+            txtUserGuess.Focus();
+            btnCheck.Enabled = true;
+
 
             guessNo = 1;
 
@@ -67,6 +71,30 @@ namespace GuessNumber
             else
             {
                 lblResult.Text = "Game Over !!!";
+            }
+        }
+
+        private void txtUserGuess_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+
+            if ((e.KeyChar == '.') && (sender as TextBox).Text.IndexOf('.') > -1)
+            {
+                e.Handled = true;
+            }
+
+            if (char.IsControl(e.KeyChar) && (e.KeyChar == (char)13 || e.KeyChar == (char)17 || e.KeyChar == (char)8))
+            {
+                e.Handled = false;
+
+                bool parseSuccess = Int32.TryParse(txtUserGuess.Text, out int userGuess);
+                if (parseSuccess && e.KeyChar == (char)13)
+                {
+                    btnCheck.PerformClick();
+                }
             }
         }
     }

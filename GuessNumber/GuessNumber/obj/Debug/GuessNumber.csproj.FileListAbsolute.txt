@@ -8,3 +8,13 @@ C:\Users\Truong Vi Huy\source\repos\GuessNumber\GuessNumber\obj\Debug\GuessNumbe
 C:\Users\Truong Vi Huy\source\repos\GuessNumber\GuessNumber\obj\Debug\GuessNumber.csproj.CoreCompileInputs.cache
 C:\Users\Truong Vi Huy\source\repos\GuessNumber\GuessNumber\obj\Debug\GuessNumber.exe
 C:\Users\Truong Vi Huy\source\repos\GuessNumber\GuessNumber\obj\Debug\GuessNumber.pdb
+C:\Users\DELL\Documents\KMIT\Projects\CSharp_WinformDemo\GuessNumber\GuessNumber\bin\Debug\GuessNumber.exe.config
+C:\Users\DELL\Documents\KMIT\Projects\CSharp_WinformDemo\GuessNumber\GuessNumber\bin\Debug\GuessNumber.exe
+C:\Users\DELL\Documents\KMIT\Projects\CSharp_WinformDemo\GuessNumber\GuessNumber\bin\Debug\GuessNumber.pdb
+C:\Users\DELL\Documents\KMIT\Projects\CSharp_WinformDemo\GuessNumber\GuessNumber\obj\Debug\GuessNumber.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\KMIT\Projects\CSharp_WinformDemo\GuessNumber\GuessNumber\obj\Debug\GuessNumber.Form1.resources
+C:\Users\DELL\Documents\KMIT\Projects\CSharp_WinformDemo\GuessNumber\GuessNumber\obj\Debug\GuessNumber.Properties.Resources.resources
+C:\Users\DELL\Documents\KMIT\Projects\CSharp_WinformDemo\GuessNumber\GuessNumber\obj\Debug\GuessNumber.csproj.GenerateResource.cache
+C:\Users\DELL\Documents\KMIT\Projects\CSharp_WinformDemo\GuessNumber\GuessNumber\obj\Debug\GuessNumber.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\KMIT\Projects\CSharp_WinformDemo\GuessNumber\GuessNumber\obj\Debug\GuessNumber.exe
+C:\Users\DELL\Documents\KMIT\Projects\CSharp_WinformDemo\GuessNumber\GuessNumber\obj\Debug\GuessNumber.pdb
