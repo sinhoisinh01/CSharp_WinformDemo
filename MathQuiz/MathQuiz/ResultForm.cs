@@ -12,6 +12,9 @@ namespace MathQuiz
 {
     public partial class ResultForm : Form
     {
+        public string PlayerName { get; set; }
+        public int PlayerScore { get; set; }
+
         public ResultForm()
         {
             InitializeComponent();
@@ -22,6 +25,7 @@ namespace MathQuiz
             MainForm mainForm = new MainForm();
 
             mainForm.Show();
+            mainForm.StartGame();
             this.Hide();
         }
     }
