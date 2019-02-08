@@ -26,7 +26,7 @@ namespace MathQuiz
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            System.Threading.Thread.Sleep(1000);
+            //System.Threading.Thread.Sleep(1000);
 
             int time = Int32.Parse(lblTimer.Text);
             time--;
@@ -35,7 +35,10 @@ namespace MathQuiz
             {
                 timer1.Stop();
                 ResultForm resultForm = new ResultForm();
+                resultForm.PlayerName = PlayerName;
+                resultForm.PlayerScore = PlayerScore;
                 this.Hide();
+                resultForm.Activate();
                 resultForm.Show();
             }
         }

@@ -28,5 +28,10 @@ namespace MathQuiz
             mainForm.StartGame();
             this.Hide();
         }
+
+        private void ResultForm_Activated(object sender, EventArgs e)
+        {
+            lblYourScore.Text = $"Your Score: {PlayerScore.ToString()}";
+        }
     }
 }

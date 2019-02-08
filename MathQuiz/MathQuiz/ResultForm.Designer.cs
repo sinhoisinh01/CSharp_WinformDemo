@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblGameOver = new System.Windows.Forms.Label();
+            this.lblYourScore = new System.Windows.Forms.Label();
             this.btnTryAgain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblGameOver
+            // lblYourScore
             // 
-            this.lblGameOver.AutoSize = true;
-            this.lblGameOver.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGameOver.Location = new System.Drawing.Point(150, 88);
-            this.lblGameOver.Name = "lblGameOver";
-            this.lblGameOver.Size = new System.Drawing.Size(197, 39);
-            this.lblGameOver.TabIndex = 0;
-            this.lblGameOver.Text = "Game Over";
+            this.lblYourScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYourScore.Location = new System.Drawing.Point(82, 88);
+            this.lblYourScore.Name = "lblYourScore";
+            this.lblYourScore.Size = new System.Drawing.Size(330, 39);
+            this.lblYourScore.TabIndex = 0;
+            this.lblYourScore.Text = "Your Score: ";
+            this.lblYourScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnTryAgain
             // 
@@ -59,18 +59,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 465);
             this.Controls.Add(this.btnTryAgain);
-            this.Controls.Add(this.lblGameOver);
+            this.Controls.Add(this.lblYourScore);
             this.Name = "ResultForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ResultForm";
+            this.Activated += new System.EventHandler(this.ResultForm_Activated);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblGameOver;
+        private System.Windows.Forms.Label lblYourScore;
         private System.Windows.Forms.Button btnTryAgain;
     }
 }
