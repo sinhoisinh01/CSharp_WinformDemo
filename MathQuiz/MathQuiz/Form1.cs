@@ -49,11 +49,17 @@
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm();
-            mainForm.PlayerName = txtPlayerName.Text;
-            mainForm.GameMode = gameModes[cmbGameMode.SelectedIndex].Value;
-            mainForm.Show();
-            mainForm.StartGame();
+            //MainForm mainForm = new MainForm();
+            //mainForm.PlayerName = txtPlayerName.Text;
+            //mainForm.GameMode = gameModes[cmbGameMode.SelectedIndex].Value;
+            //mainForm.Show();
+            //mainForm.StartGame();
+            //this.Hide();
+
+            MainForm main = new MainForm();
+            main.Show();
+            main.PlayerName = txtPlayerName.Text;
+            main.GameMode = gameModes[cmbGameMode.SelectedIndex].Value;
             this.Hide();
         }
     }
