@@ -28,6 +28,7 @@
             lblYourScore.Text = $"Your Score: {PlayerScore.ToString()}";
 
             HighScoreFileService.GetHighScoreItemList();
+            HighScoreFileService.AddHighScoreItemToFile(new Model.HighScoreItem() { PlayerName = "Sinh 1", PlayerScore = 500 });
         }
     }
 }

@@ -35,6 +35,7 @@
                         Int32.TryParse(line, out int playerScore);
                         highScoreItem.PlayerScore = playerScore;
                     }
+                    highScoreItems.Add(highScoreItem);
                     index++;
                 }
             }
